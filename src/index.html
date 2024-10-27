@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <header class="header">
+      <div class="container header-container">
+        <form class="header-form" id="task-form">
+          <input class="header-form-input" type="text" name="taskName" />
+          <input class="header-form-input" type="text" name="taskText" />
+          <button class="header-form-btn" type="submit">Add</button>
+        </form>
+      </div>
+    </header>
 
     <main>
       <!-- Loads the specified .html file -->
-      <load src="./partials/tasks-list.html" />
+      <section>
+        <div class="container"><ul class="tasks-list" id="task-list"></ul></div>
+      </section>
     </main>
 
     <script type="module" src="./main.js"></script>
